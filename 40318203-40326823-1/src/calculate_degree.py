@@ -14,6 +14,10 @@ def degree_calculator(G):
                 print(f"Node {node}: In_Degree = {G.in_degree(node)}, Out_Degree = {G.out_degree(node)}")
         elif choice == "specific":
             node = input("Enter the desired node name: ")
+            try:
+                node = int(node)
+            except ValueError:
+                pass
             if G.has_node(node):
                 print(f"Node {node}: In_Degree = {G.in_degree(node)}, Out_Degree = {G.out_degree(node)}")
             else:
@@ -31,6 +35,10 @@ def degree_calculator(G):
                 print(f"Node {node}: Degree = {G.degree(node)}")
         elif choice == "specific":
             node = input("Enter the desired node name: ")
+            try:
+                node = int(node)
+            except ValueError:
+                pass
             if G.has_node(node):
                 print(f"Node {node}: Degree = {G.degree(node)}")
             else:
