@@ -12,6 +12,9 @@
 - **توییت‌ها (tweets)**  
 - **روابط بین کاربران** مثل فالو، لایک و …  
 
+[لینک گیت‌هاب پروژه](https://github.com/LuoUndergradXJTU/TwiBot-22)  
+[لینک گوگل درایو دیتاست](https://drive.google.com/drive/folders/1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs?usp=sharing)  
+
 ---
 
 ## 🎯 هدف پروژه  
