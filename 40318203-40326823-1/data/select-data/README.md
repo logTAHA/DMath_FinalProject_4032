@@ -1,4 +1,4 @@
-# 🐦 TwiBot‑22 Dataset Subsampling  
+# 🐦 TwiBot‑22 نمونه گیری از دیتاست
 
 ‏این پروژه مربوط به انتخاب یک زیرمجموعه کوچک و معنادار از دیتاست **TwiBot‑22** است.
 
@@ -12,7 +12,7 @@
 - **توییت‌ها (tweets)**  
 - **روابط بین کاربران** مثل فالو، لایک و …  
 
-[لینک گیت‌هاب پروژه](https://github.com/LuoUndergradXJTU/TwiBot-22)  
+[لینک گیت‌هاب پروژه TwiBot‑22](https://github.com/LuoUndergradXJTU/TwiBot-22)  
 [لینک گوگل درایو دیتاست](https://drive.google.com/drive/folders/1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs?usp=sharing)  
 
 ---
