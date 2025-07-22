@@ -1,0 +1,962 @@
+[
+  {
+    "id": "u24646005",
+    "username": "ABCscience",
+    "name": "ABC Science",
+    "description": "Science | Health | Technology | Environment. This is an official @ABCaustralia account.",
+    "location": "Australia",
+    "verified": true,
+    "protected": false,
+    "created_at": "2009-03-16 03:53:52+00:00"
+  },
+  {
+    "id": "u318093688",
+    "username": "ScienceAU",
+    "name": "Science & Technology Australia",
+    "description": "Science & Technology Australia gives voice to 88,000 scientists & technologists. We run #ScienceMeetsParliament + #SuperstarsofSTEM & #STEMambassadors programs",
+    "location": "Canberra",
+    "verified": false,
+    "protected": false,
+    "created_at": "2011-06-15 23:33:22+00:00"
+  },
+  {
+    "id": "u22129782",
+    "username": "kylieahern",
+    "name": "Kylie Ahern",
+    "description": "An award winning science and environment publisher. CEO @stem_matters | Publisher @thebrilliantHQ | Co-founder @cosmosmagazine #scicomm",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2009-02-27 11:17:14+00:00"
+  },
+  {
+    "id": "u84163797",
+    "username": "Data61news",
+    "name": "Data61",
+    "description": "Creating our data-driven future. We're the world’s leading data-focused innovation powerhouse. Follows, likes, RTs not endorsements.",
+    "location": "Australia",
+    "verified": true,
+    "protected": false,
+    "created_at": "2009-10-21 21:11:55+00:00"
+  },
+  {
+    "id": "u874754055037255680",
+    "username": "MSeqVC",
+    "name": "Main Sequence",
+    "description": "Deep tech investment fund tackling the world’s biggest challenges,  turning today’s scientific discoveries into tomorrow’s industries. Team: https://t.co/qHORSMISZJ 🚀",
+    "location": "Sydney",
+    "verified": false,
+    "protected": false,
+    "created_at": "2017-06-13 22:23:13+00:00"
+  },
+  {
+    "id": "u961802092003209216",
+    "username": "SpaceAusDotCom",
+    "name": "SpaceAustralia.com",
+    "description": "Connecting Australia’s Space Community with news, people, events and projects. Write for us! Follow #SpaceAustralia",
+    "location": "Sydney, New South Wales",
+    "verified": true,
+    "protected": false,
+    "created_at": "2018-02-09 03:21:02+00:00"
+  },
+  {
+    "id": "u781369249008750592",
+    "username": "DrSamantha_J__",
+    "name": "Samantha Wade",
+    "description": "Postdoc @ IHMRI, Wollongong, Australia | pancreatic & breast cancer - biomaterials - drug delivery",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2016-09-29 05:45:20+00:00"
+  },
+  {
+    "id": "u301479546",
+    "username": "Neurobionics",
+    "name": "Anita Quigley",
+    "description": "@RMIT @BioFab3D @Unimelb VC Senior Research Fellow. Neural & muscle research, organoids, 3D tissue models, biomaterials & bioprinting. Tweets = my own opinions.",
+    "location": "Melbourne, Australia.",
+    "verified": false,
+    "protected": false,
+    "created_at": "2011-05-19 14:56:57+00:00"
+  },
+  {
+    "id": "u1194759775969370112",
+    "username": "clairerich28",
+    "name": "Claire Richards",
+    "description": "UTS PhD candidate #preeclampsia | Organoid enthusiast | 🤍’s researching female health and cute dog pics | Appreciates a good GIF",
+    "location": "Sydney, New South Wales",
+    "verified": false,
+    "protected": false,
+    "created_at": "2019-11-13 23:31:51+00:00"
+  },
+  {
+    "id": "u147393852",
+    "username": "whereisdaz",
+    "name": "Dr Darren Saunders",
+    "description": "Biomedical scientist | Talks science on Radio & TV | Writer | Thalassophile 🧬 🏄🏼‍♀️ 🌊 🏊‍♀️ 🚴 ⛷🏑",
+    "location": "Gadigal Land. Sydney Australia",
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-05-24 01:26:34+00:00"
+  },
+  {
+    "id": "u11781162",
+    "username": "mcannonbrookes",
+    "name": "Mike Cannon-Brookes 👨🏼‍💻🧢🇦🇺",
+    "description": "Husband. Dad. Australian 💛💚 Busy @Atlassian @UtahJazz @SSFCRabbitohs @Grok_Ventures @BlackbirdVC @RoomToRead And 🌱-  CO2 age: 338.96",
+    "location": "Gundungara Country",
+    "verified": true,
+    "protected": false,
+    "created_at": "2008-01-03 01:42:16+00:00"
+  },
+  {
+    "id": "u509731048",
+    "username": "jade_mikaela",
+    "name": "Mikaela Jade",
+    "description": "Advancing equality in the spatial web and frontier technologies #AR #XR #AI through cultural knowledge, language and connection to Country through @indigitaledu",
+    "location": "Canberra, Australian Capital T",
+    "verified": false,
+    "protected": false,
+    "created_at": "2012-03-01 04:54:34+00:00"
+  },
+  {
+    "id": "u2573833471",
+    "username": "MonashPharm",
+    "name": "Monash Pharmacy & Pharmaceutical Sciences",
+    "description": "Official account of @MonashUni Pharmacy & Pharmaceutical Sciences, Parkville Campus. Home of @MIPS_Australia. #PharmEd #BioTech #PharmSci #Pharmacy",
+    "location": "Naarm/Melbourne, Victoria",
+    "verified": false,
+    "protected": false,
+    "created_at": "2014-06-18 00:24:12+00:00"
+  },
+  {
+    "id": "u965353159936782337",
+    "username": "CDS_Australia",
+    "name": "Tanya Monro",
+    "description": "Chief Defence Scientist and head of Defence Science and Technology. Retweet does not imply endorsement.",
+    "location": "Canberra",
+    "verified": true,
+    "protected": false,
+    "created_at": "2018-02-18 22:31:43+00:00"
+  },
+  {
+    "id": "u6884",
+    "username": "philmorle",
+    "name": "Phil M♼rle 🖖🏻 🚢",
+    "description": "Deep tech VC ⌇ Partner at @mseqvc ⌇ Writing: https://t.co/PNFLoM1dGd ⌇ MSV Team: https://t.co/5F6IMa8y2d",
+    "location": "Sydney",
+    "verified": false,
+    "protected": false,
+    "created_at": "2006-09-25 23:59:07+00:00"
+  },
+  {
+    "id": "u34406598",
+    "username": "Advance",
+    "name": "Advance.org",
+    "description": "Advance is the professional network for global Australians\n#BornGlobal",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2009-04-22 21:33:44+00:00"
+  },
+  {
+    "id": "u346400805",
+    "username": "Science_Academy",
+    "name": "Australian Academy of Science",
+    "description": "We are a not-for-profit representing Australia's leading scientists and promoting public awareness of science. Visit our Climate Change Hub to #GetTheScience.",
+    "location": "Canberra, Australia",
+    "verified": true,
+    "protected": false,
+    "created_at": "2011-08-01 06:07:46+00:00"
+  },
+  {
+    "id": "u195161562",
+    "username": "Krisbock",
+    "name": "Kris Bock",
+    "description": "Data Science, ML & AI.  Azure Engineering.",
+    "location": "Brisbane, Queensland",
+    "verified": false,
+    "protected": false,
+    "created_at": "2010-09-26 00:01:55+00:00"
+  },
+  {
+    "id": "u269196907",
+    "username": "ethbey",
+    "name": "Dr Elizabeth Stout",
+    "description": "Research Officer at the Murdoch Children's Research Institute",
+    "location": "Melbourne, Victoria",
+    "verified": false,
+    "protected": false,
+    "created_at": "2011-03-20 08:24:58+00:00"
+  },
+  {
+    "id": "u17383073",
+    "username": "UQ_News",
+    "name": "UQ News",
+    "description": "News, events and discoveries at The University of Queensland. Monitored by #UQ media during business hours.\nCRICOS Code 00025B. Guidelines: https://t.co/esjf0dImfq",
+    "location": "Brisbane",
+    "verified": true,
+    "protected": false,
+    "created_at": "2008-11-14 07:01:18+00:00"
+  },
+  {
+    "id": "u256424454",
+    "username": "dr_krystal",
+    "name": "Dr Krystal Evans PhD",
+    "description": "Scientist. Executive. Pharma. @GSK_AU. Innovation Champion. Bad Feminist. Science Communicator. 🏳️‍🌈 Living on Wurundjeri land. All tweets are my own. She/Her",
+    "location": "Melbourne, Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2011-02-23 09:00:40+00:00"
+  },
+  {
+    "id": "u1077375997933060096",
+    "username": "UmarJawairia",
+    "name": "Jawairia Umar",
+    "description": "PhD Scholar at University of Wollongong, ARC Centre of Excellence for Electromaterials Science, ANNF, Working on Textile based Electrofluidics",
+    "location": "Wollongong, New South Wales",
+    "verified": false,
+    "protected": false,
+    "created_at": "2018-12-25 01:30:29+00:00"
+  },
+  {
+    "id": "u846563012634787841",
+    "username": "IISA_Board",
+    "name": "Industry Innovation and Science Australia",
+    "description": "Official Twitter account of Industry Innovation and Science Australia. Providing strategic guidance on the future of Australian innovation.",
+    "location": "Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2017-03-28 03:22:05+00:00"
+  },
+  {
+    "id": "u1408142352",
+    "username": "math_rachel",
+    "name": "Rachel Thomas",
+    "description": "co-founder https://t.co/AX7b3ucnOb, professor of practice @QUTDataScience | machine learning, data, ethics, algorithmic harms, math PhD (she/her)",
+    "location": "Brisbane, Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2013-05-06 16:31:50+00:00"
+  },
+  {
+    "id": "u17800689",
+    "username": "suekeay",
+    "name": "Dr Sue Keay FTSE",
+    "description": "R&D Leader | Board Director | Scientist | Businessperson | Speaker | Embedded AI | Robotics | MBA | PhD Earth Sciences #superstarsofstem #hopperdownunder",
+    "location": "Brisbane, Queensland",
+    "verified": false,
+    "protected": false,
+    "created_at": "2008-12-02 05:24:27+00:00"
+  },
+  {
+    "id": "u850475056765345793",
+    "username": "DrLarryMarshall",
+    "name": "Larry Marshall",
+    "description": "Chief Exec @CSIRO, scientist, technology innovator, business leader, Champions of Change Coalition member.",
+    "location": "Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2017-04-07 22:27:09+00:00"
+  },
+  {
+    "id": "u1318816143415521280",
+    "username": "Dr_RyanDavis",
+    "name": "Ryan Davis",
+    "description": "Research Fellow at USyd, mitochondrial and Parkinson’s disease research. Australian Society for Medical Research Immediate-past President and Executive Director",
+    "location": "Sydney, New South Wales",
+    "verified": false,
+    "protected": false,
+    "created_at": "2020-10-21 07:27:44+00:00"
+  },
+  {
+    "id": "u3425143394",
+    "username": "SciGenderEquity",
+    "name": "SAGE",
+    "description": "SAGE Ltd improves #GenderEquity, diversity, and inclusion in #HigherEducation and #Research institutions. Administers the #AthenaSwan program in Australia",
+    "location": "Canberra City, Canberra",
+    "verified": false,
+    "protected": false,
+    "created_at": "2015-09-02 11:09:24+00:00"
+  },
+  {
+    "id": "u21147300",
+    "username": "DoctorKarl",
+    "name": "Dr Karl",
+    "description": "Dr Karl Kruszelnicki ~  an answer looking for a question. Dr Karl brings science to radio Thursdays (Triplej 1100-1200), & all over Oz on Wed/Thu   https://t.co/3xVhwmqHYY .",
+    "location": "Australia",
+    "verified": true,
+    "protected": false,
+    "created_at": "2009-02-17 23:44:11+00:00"
+  },
+  {
+    "id": "u161822962",
+    "username": "aims_gov_au",
+    "name": "Australian Institute of Marine Science",
+    "description": "The Australian Institute of Marine Science - Australia's tropical marine research agency.",
+    "location": "Cape Ferguson, Townsville",
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-07-01 21:52:30+00:00"
+  },
+  {
+    "id": "u20956102",
+    "username": "DrEmmaLJohnston",
+    "name": "Prof Emma L Johnston AO FTSE",
+    "description": "Dean of Science @UNSW. Professor of Marine Ecology & Ecotoxicology. Co-Chief Author of Australian State of Environment Report. Presenter for 'Coast Australia'.",
+    "location": "Sydney",
+    "verified": false,
+    "protected": false,
+    "created_at": "2009-02-16 02:22:05+00:00"
+  },
+  {
+    "id": "u196661823",
+    "username": "olumideaeo",
+    "name": "Olumideaeo",
+    "description": "",
+    "location": "Ilorin",
+    "verified": false,
+    "protected": false,
+    "created_at": "2010-09-29 16:40:30+00:00"
+  },
+  {
+    "id": "u10451462",
+    "username": "catspyjamasnz",
+    "name": "👩🏻‍💻Joyce Seitzinger #staysafe #getvaccinated",
+    "description": "Making innovation in higher education happen. Director SX Innovation @rmitonline. (she/her)",
+    "location": "Melbourne / Naarm",
+    "verified": false,
+    "protected": false,
+    "created_at": "2007-11-21 21:14:58+00:00"
+  },
+  {
+    "id": "u3091646856",
+    "username": "ScienceGovAu",
+    "name": "sciencegovau",
+    "description": "Official feed for latest news and info about the Australian Government's commitments and investments in science. Retweets are not endorsements.",
+    "location": "Australia",
+    "verified": true,
+    "protected": false,
+    "created_at": "2015-03-17 01:03:14+00:00"
+  },
+  {
+    "id": "u1903560060",
+    "username": "OrangeBond",
+    "name": "Robert Linsdell 🏴󠁧󠁢󠁥󠁮󠁧󠁿🇦🇺",
+    "description": "Innovative thinker, part-time visionary, MD ANZ. Technology fascinates me - #ML #AR #AI #VR #SmartCity #IIot #IoT #Connectivity #edge #5G #Vertiv @VertivCO_AP",
+    "location": "Sydney, Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2013-09-25 09:44:43+00:00"
+  },
+  {
+    "id": "u3158689771",
+    "username": "ScienceChiefAu",
+    "name": "Australia's Chief Scientist",
+    "description": "Twitter account for the Office of the Chief Scientist supporting Dr Cathy Foley. Tweets by staff. Retweets not endorsements.",
+    "location": "Canberra",
+    "verified": false,
+    "protected": false,
+    "created_at": "2015-04-16 05:13:23+00:00"
+  },
+  {
+    "id": "u887464432430850048",
+    "username": "cheekyneurons",
+    "name": "Nix & Nellie",
+    "description": "Cheeky & curious neurons exploring epilepsy & the brain.",
+    "location": "Canberra, Australian Capital Territory",
+    "verified": false,
+    "protected": false,
+    "created_at": "2017-07-19 00:09:43+00:00"
+  },
+  {
+    "id": "u175282603",
+    "username": "jeremyphoward",
+    "name": "Jeremy Howard",
+    "description": "🇦🇺 Co-founder: @FastDotAI, Masks4All;\nResearch: @CSIRO, @USFCA, @RealOzSAGE",
+    "location": "Brisbane/Queensland, Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2010-08-06 04:58:18+00:00"
+  },
+  {
+    "id": "u934842466175401984",
+    "username": "AnnaParadowska1",
+    "name": "Prof. Anna Paradowska",
+    "description": "👩‍🔬&👩🏻‍🏭building bridges between research & industry @ANSTO & @Sydney_Uni 🇦🇺. Mum & wife. 😍diving⛷🏄‍♀️ & life in general! Comments are my own. She/her",
+    "location": "Sydney, New South Wales",
+    "verified": false,
+    "protected": false,
+    "created_at": "2017-11-26 17:53:07+00:00"
+  },
+  {
+    "id": "u314391114",
+    "username": "Kevinecullen",
+    "name": "Kevin Cullen",
+    "description": "Getting KAUST’s world class University research put to use by entrepreneurs, companies, students and the public.",
+    "location": "Jeddah",
+    "verified": false,
+    "protected": false,
+    "created_at": "2011-06-10 05:28:10+00:00"
+  },
+  {
+    "id": "u1389876718047875073",
+    "username": "RoboticsAINews",
+    "name": "RoboticsAINews",
+    "description": "News aggregation service. Covering #robotics #artificialintelligence #machinelearning  Anne Elvin (Founder) @ae_editor 🌈🤖🇦🇺 #robots #ai #ml",
+    "location": "Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2021-05-05 09:37:22+00:00"
+  },
+  {
+    "id": "u1708383414",
+    "username": "InnovationSarah",
+    "name": "Sarah Pearson",
+    "description": "Innovation & emerging economies,scientist, investor,change agent,NED & mother. IIX, AI Hub, Main Sequence Ventures & Space Industry Leaders Forum. My own views",
+    "location": "Brisbane",
+    "verified": false,
+    "protected": false,
+    "created_at": "2013-08-28 22:27:07+00:00"
+  },
+  {
+    "id": "u246178914",
+    "username": "normanswan",
+    "name": "Norman Swan",
+    "description": "Host of RN’s Health Report, co-host of Coronacast & commentator on ABC TV’s 7.30. New book out now, order your copy today: https://t.co/u5vlpZTpzA",
+    "location": null,
+    "verified": true,
+    "protected": false,
+    "created_at": "2011-02-02 09:05:34+00:00"
+  },
+  {
+    "id": "u3344897053",
+    "username": "maththrills",
+    "name": "Michael Milford",
+    "description": "Joint Director QUT Centre for Robotics, ARC Laureate Fellow, Math Thrills founder, localization, autonomous vehicles, robotics, bio-inspired, RatSLAM, SeqSLAM",
+    "location": "Brisbane, Queensland",
+    "verified": false,
+    "protected": false,
+    "created_at": "2015-08-26 04:55:18+00:00"
+  },
+  {
+    "id": "u2167434860",
+    "username": "ATSE_au",
+    "name": "Academy of Technology and Engineering",
+    "description": "Helping Australians use technology to solve complex problems. @_IMNIS @STELRproject @csinschools @SciGenderEquity",
+    "location": "Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2013-10-31 23:47:00+00:00"
+  },
+  {
+    "id": "u36524036",
+    "username": "TobyWalsh",
+    "name": "Toby Walsh. Hiring PhDs. 💉💉💉",
+    "description": "Laureate Fellow & Scientia Professor of AI @ UNSW Sydney",
+    "location": "Sydney, Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2009-04-29 23:45:42+00:00"
+  },
+  {
+    "id": "u427330274",
+    "username": "MVEG001",
+    "name": "Dr Marguerite Evans-Galea AM",
+    "description": "Scientist, Executive, NED | @_IMNIS Executive Director, @atse_au | Cofounder, @WomenSciAUST | Australasian Editor, @GeneTherapy_SN | She/Her",
+    "location": "Naarm | Wurundjeri | Melbourne",
+    "verified": false,
+    "protected": false,
+    "created_at": "2011-12-03 11:48:20+00:00"
+  },
+  {
+    "id": "u174083824",
+    "username": "CSIRO",
+    "name": "CSIRO",
+    "description": "We ♥ science. We're Australia's national science agency. We solve the greatest challenges through innovative science and technology. RTs not endorsements.",
+    "location": "Australia",
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-08-03 02:06:21+00:00"
+  },
+  {
+    "id": "u2154461958",
+    "username": "WomenSciAUST",
+    "name": "Women in STEMM Aust",
+    "description": "Volunteer-run, connecting all women in science, technology, engineering, math & medicine (STEMM) #girlsinSTEMM #womeninSTEMM Cofounders @startupshelley @MVEG001",
+    "location": "Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2013-10-25 08:36:21+00:00"
+  },
+  {
+    "id": "u468825843",
+    "username": "UNSWScience",
+    "name": "UNSW Science",
+    "description": "The @UNSW Faculty of Science official account. Tweets don't necessarily represent UNSW views: https://t.co/Bc6nOBi8Lf CRICOS no.00098G",
+    "location": "Sydney, Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2012-01-19 23:28:02+00:00"
+  }
+  {
+    "id": "u151123001",
+    "username": "SergioRamos",
+    "name": "Sergio Ramos",
+    "description": "Jugador de fútbol y embajador de @unicef_es. Corazón, carácter y pasión.\nFootball player and @unicef_es ambassador. Heart, character and passion.\n@psg_inside",
+    "location": "Madrid, Spain",
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-06-02 17:17:33+00:00"
+  },
+  {
+    "id": "u1280813065936744453",
+    "username": "Franco84508724",
+    "name": "Ramadan usama",
+    "description": "Achid",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2020-07-08 10:37:11+00:00"
+  },
+  {
+    "id": "u124189302",
+    "username": "btsport",
+    "name": "BT Sport",
+    "description": "At the heart of sport.",
+    "location": "Be There",
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-03-18 15:08:06+00:00"
+  },
+  {
+    "id": "u3096214520",
+    "username": "miss__shah__",
+    "name": "Shayzay",
+    "description": "✨The hardest part of my life is being nice to stupid people ✨",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2015-03-18 12:32:07+00:00"
+  },
+  {
+    "id": "u1161269799768530949",
+    "username": "SerieA_EN",
+    "name": "Lega Serie A",
+    "description": "The official Lega Serie A English account. 💎\n@SerieA 🇮🇹 | العربية @SerieA_AR | @SerieA_ES 🇪🇸 | @SerieA_ID 🇮🇩",
+    "location": null,
+    "verified": true,
+    "protected": false,
+    "created_at": "2019-08-13 13:34:30+00:00"
+  },
+  {
+    "id": "u26045628",
+    "username": "SadieHartmann",
+    "name": "Sadie Hartmann (Mother Horror)",
+    "description": "(She/Her)Bylines @CemeteryDance @ScreamHorrorMag @GrimDarkMag @litreactor @TorNightfire @MandSMagazine @lineupweekly Co-Own @Night_Worms Active @HorrorWriters",
+    "location": "Tacoma, WA",
+    "verified": false,
+    "protected": false,
+    "created_at": "2009-03-23 17:27:15+00:00"
+  },
+  {
+    "id": "u701447414184431617",
+    "username": "75hikarihanate",
+    "name": "pedreria 今年もよろしくね(♡ᴗ͈ˬᴗ͈)",
+    "description": "こんにちは(^-^)、お花 自然 動物 インテリア雑貨 いろいろ大好き。写真はお花を撮るのが楽しいです、よろしくお願いします。写真、文章の転用、引用RTは固くお断りいたします。現在、いいね、RTが消えてしまっているところが多々あり、ご迷惑おかけしています。それと通知欄が混迷していて見落としの時は本当にごめんなさい🙏。",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2016-02-21 16:44:30+00:00"
+  },
+  {
+    "id": "u212256256",
+    "username": "Akkaraudomroj",
+    "name": "PIRATCHAKARN AKKARAUDOMROJ",
+    "description": "",
+    "location": "Bangkok Thailand",
+    "verified": false,
+    "protected": false,
+    "created_at": "2010-11-05 15:35:46+00:00"
+  },
+  {
+    "id": "u1267984892",
+    "username": "Lauren12arsenal",
+    "name": "Lauren Etame Mayer",
+    "description": "Winner of 2 Premier League | 4 FA Cup | 3 Community Shields | Olympic Gold | 2 African Cup | 1 Spanish Cup | @FIFAcom Technical Expert",
+    "location": null,
+    "verified": true,
+    "protected": false,
+    "created_at": "2013-03-14 20:57:56+00:00"
+  },
+  {
+    "id": "u1274456554352377856",
+    "username": "MrsARose1",
+    "name": "🌱Audrey Rose 🌹💚",
+    "description": "Co Founder of #TweetersFlowerShow 💐 Founder of @flowersonfriday 💐and part of team #RoseWednesday 🌹spent the last 3 years landscaping our garden.",
+    "location": "Wales, United Kingdom",
+    "verified": false,
+    "protected": false,
+    "created_at": "2020-06-20 21:38:28+00:00"
+  },
+  {
+    "id": "u2992430210",
+    "username": "ChHamidHameed",
+    "name": "Ch Hamid Hameed MNA",
+    "description": "ہم نکلٻں گے۔پکارٻں گے۔للکارٻں گے۔ #ووٹ_کو_عزت_دو MNA, NA-90 Sargodha. [OFFICIAL ACCOUNT]",
+    "location": "Sargodha, Pakistan",
+    "verified": false,
+    "protected": false,
+    "created_at": "2015-01-22 16:50:13+00:00"
+  },
+  {
+    "id": "u140070953",
+    "username": "FIFAcom",
+    "name": "FIFA.com",
+    "description": "Bringing you news on FIFA, its 211 Member Associations, our Vision 2020-2023 & those harnessing football's power to have a ➕ social impact. 📰 https://t.co/AzDglGJdZ1",
+    "location": null,
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-05-04 13:48:36+00:00"
+  },
+  {
+    "id": "u1385183922158440454",
+    "username": "kedimaya20",
+    "name": "maya's mom",
+    "description": "",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2021-04-22 10:49:56+00:00"
+  },
+  {
+    "id": "u1280598815280676866",
+    "username": "Akanbisamson6",
+    "name": "@light bearer #nothingpassGod",
+    "description": "Am gentle and ready to learn and you don't take my kindness for granted....",
+    "location": "@ogun state abeokuta",
+    "verified": false,
+    "protected": false,
+    "created_at": "2020-07-07 20:26:16+00:00"
+  },
+  {
+    "id": "u1415338212",
+    "username": "AravindSrj",
+    "name": "Aravind Sreejith",
+    "description": "Robotics Software Engineer at Vicarious",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2013-05-09 11:53:36+00:00"
+  },
+  {
+    "id": "u372693900",
+    "username": "Joee_Blackkk",
+    "name": "Joe Black",
+    "description": "#photography #nature #art #flowers #fashion #sunset #landscape #beauty #animals #music #travel #birds 🚫 No dm No groups 🚫",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2011-09-13 07:32:36+00:00"
+  },
+  {
+    "id": "u309340221",
+    "username": "willianborges88",
+    "name": "Willian",
+    "description": "Jogador de futebol - Football player",
+    "location": "São Paulo, Brasil",
+    "verified": true,
+    "protected": false,
+    "created_at": "2011-06-01 22:58:52+00:00"
+  },
+  {
+    "id": "u710023802273472513",
+    "username": "inferno4dante",
+    "name": "A.M. Hounchell",
+    "description": "Author First. Jokester Second. Arcade Mechanic, Card Thrower, Magnet Fisherman, D&D Nerd, Gamer, Wild Magic Sorcerer Third. \n\n#CYOA #Fantasy #BadBookIdeas",
+    "location": "Kansas, USA",
+    "verified": false,
+    "protected": false,
+    "created_at": "2016-03-16 08:44:00+00:00"
+  },
+  {
+    "id": "u311188796",
+    "username": "MarceloMaxzed",
+    "name": "Maxzed Investor SDV",
+    "description": "Recreio dos Bandeirantes, Rio de Janeiro RJ",
+    "location": "Rio de Janeiro, Brazil",
+    "verified": false,
+    "protected": false,
+    "created_at": "2011-06-05 01:39:17+00:00"
+  },
+  {
+    "id": "u1029000696971124739",
+    "username": "AlainAmharic",
+    "name": "Al Ain Amharic አል ዐይን አማርኛ",
+    "description": "አል-አይን የአማርኛ ዜና ድረ-ገፅ ሲሆን ፖለቲካዊ፡ኢኮኖሚያዊና ስፖርታዊ ዜና በዓለምአቀፍ ደረጃ በተአማኒነት የሚያቀርብ አንዱ የአል-አይን ሚዲያ ፕላት ፎርም ኔትወርክ ነው፡",
+    "location": null,
+    "verified": true,
+    "protected": false,
+    "created_at": "2018-08-13 13:44:18+00:00"
+  },
+  {
+    "id": "u265982289",
+    "username": "D_DeGea",
+    "name": "David de Gea",
+    "description": "⚽ Goalkeeper @ManUtd 🇪🇸 International with @SeFutbol ♦️ Founder & President @RebelsGaming",
+    "location": null,
+    "verified": true,
+    "protected": false,
+    "created_at": "2011-03-14 13:03:14+00:00"
+  },
+  {
+    "id": "u155927976",
+    "username": "rioferdy5",
+    "name": "Rio Ferdinand",
+    "description": "Official Twitter Account of Rio Ferdinand / Media & Commercial Enquiries - Info@neweraltd.co.uk / @_Jmallen",
+    "location": "www.neweraglobalsports.com",
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-06-15 14:47:40+00:00"
+  },
+  {
+    "id": "u1304144493172658176",
+    "username": "NawazSharifMNS",
+    "name": "Nawaz Sharif",
+    "description": "Former Prime Minister of Pakistan▪️Quaid Pakistan Muslim League (Nawaz) @pmln_org",
+    "location": "Pakistan",
+    "verified": false,
+    "protected": false,
+    "created_at": "2020-09-10 19:47:56+00:00"
+  },
+  {
+    "id": "u411298271",
+    "username": "jwdkayani",
+    "name": "Jawad Kayani",
+    "description": "ICMA 🇵🇰 | MIPA 🇦🇺 | AFA 🇬🇧 | MS & MBA 🇵🇰 | Accountant 💶| Arsenal FC ❤️⚽️ | Gakhar Bugial 🏰🛡⚔️ | PMLN ✌️| Jhelum 🏡 | Antiestablishment 🔫",
+    "location": "Rawalpindi, Pakistan",
+    "verified": false,
+    "protected": false,
+    "created_at": "2011-11-13 07:17:37+00:00"
+  },
+  {
+    "id": "u2231218735",
+    "username": "MutumbaSam",
+    "name": "Samuel Mutumba Jr",
+    "description": "Loving Christian and professional footballer",
+    "location": "Kampala, Uganda",
+    "verified": false,
+    "protected": false,
+    "created_at": "2013-12-05 09:29:13+00:00"
+  },
+  {
+    "id": "u1903382054",
+    "username": "England",
+    "name": "England",
+    "description": "Home of @EnglandFootball's national teams: the #ThreeLions, @Lionesses, #YoungLions and Para Lions. Contact us: https://t.co/pENvsHJf69",
+    "location": "St. George's Park, England",
+    "verified": true,
+    "protected": false,
+    "created_at": "2013-09-25 08:23:07+00:00"
+  },
+  {
+    "id": "u139092348",
+    "username": "aguerosergiokun",
+    "name": "Sergio Kun Aguero",
+    "description": "Argentino. Jugador del FC Barcelona. 15 títulos Man City/ Europa League y Supercopa Atleti 2010/Mundial Sub 20 2005 y 2007, JJ.OO. 2008, Copa América 2021  🇦🇷",
+    "location": "Barcelona, Spain",
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-05-01 14:30:52+00:00"
+  },
+  {
+    "id": "u4274691915",
+    "username": "prinx3275",
+    "name": "Prince K Acheampong",
+    "description": "#NotYourRegularPharmacist#",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2015-11-25 13:18:28+00:00"
+  },
+  {
+    "id": "u627673190",
+    "username": "ChampionsLeague",
+    "name": "UEFA Champions League",
+    "description": "🇪🇸 @LigadeCampeones \n🇯🇵 @UCLJapan \nUnder-19 @UEFAYouthLeague",
+    "location": "Nyon, Vaud",
+    "verified": true,
+    "protected": false,
+    "created_at": "2012-07-05 19:43:40+00:00"
+  },
+  {
+    "id": "u131367777",
+    "username": "olopa03",
+    "name": "kayode Ojo",
+    "description": "",
+    "location": "Houston, TX",
+    "verified": false,
+    "protected": false,
+    "created_at": "2010-04-10 02:16:53+00:00"
+  },
+  {
+    "id": "u22910295",
+    "username": "ChelseaFC",
+    "name": "Chelsea FC",
+    "description": "Champions of Europe. 🏆⚽️",
+    "location": "London, England",
+    "verified": true,
+    "protected": false,
+    "created_at": "2009-03-05 11:54:25+00:00"
+  },
+  {
+    "id": "u224223563",
+    "username": "3gerardpique",
+    "name": "Gerard Piqué",
+    "description": "FCBarcelona football player | Kosmos President & Founder",
+    "location": "Barcelona",
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-12-08 13:20:43+00:00"
+  },
+  {
+    "id": "u394581283",
+    "username": "Torres",
+    "name": "Fernando Torres",
+    "description": "Bienvenidos a mi perfil oficial en Twitter / Welcome to my official Twitter profile https://t.co/8jKUHVCnXc https://t.co/3FCVxMHq3f",
+    "location": null,
+    "verified": true,
+    "protected": false,
+    "created_at": "2011-10-20 09:23:11+00:00"
+  },
+  {
+    "id": "u745002644",
+    "username": "JackWilshere",
+    "name": "Jack Wilshere",
+    "description": "Professional footballer. Proud father to son Archie and daughter Delilah. Instagram: JackWilshere",
+    "location": null,
+    "verified": true,
+    "protected": false,
+    "created_at": "2012-08-08 11:19:37+00:00"
+  },
+  {
+    "id": "u1093530573140824064",
+    "username": "Alessan47490649",
+    "name": "Alessandro D'Elia",
+    "description": "",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2019-02-07 15:23:00+00:00"
+  },
+  {
+    "id": "u285332860",
+    "username": "WayneRooney",
+    "name": "Wayne Rooney",
+    "description": "@dcfcofficial | https://t.co/AQADVVriOR | @foundationwr | @triplessports",
+    "location": null,
+    "verified": true,
+    "protected": false,
+    "created_at": "2011-04-20 23:47:12+00:00"
+  },
+  {
+    "id": "u558797310",
+    "username": "ManUtd",
+    "name": "Manchester United",
+    "description": "The home of Manchester United.",
+    "location": "Old Trafford, Manchester",
+    "verified": true,
+    "protected": false,
+    "created_at": "2012-04-20 15:17:43+00:00"
+  },
+  {
+    "id": "u230845588",
+    "username": "Persie_Official",
+    "name": "Robin van Persie",
+    "description": "Contact: keesvos.rvp@seginternational.com",
+    "location": "Rotterdam, The Netherlands",
+    "verified": true,
+    "protected": false,
+    "created_at": "2010-12-26 21:38:00+00:00"
+  },
+  {
+    "id": "u344801362",
+    "username": "DavidLuiz_4",
+    "name": "David Luiz",
+    "description": "Enjoy the life!\n🔴⚫️💥\nhttps://t.co/6cHcpZY4nc…",
+    "location": "Rio de Janeiro",
+    "verified": true,
+    "protected": false,
+    "created_at": "2011-07-29 16:17:52+00:00"
+  },
+  {
+    "id": "u1240157816595214337",
+    "username": "deepsoulnature",
+    "name": "The Nature",
+    "description": "My Heart lies between the Mountains, Animals, Rivers, Oceans, Sky, Love & Friendship...@❤️",
+    "location": "🌍",
+    "verified": false,
+    "protected": false,
+    "created_at": "2020-03-18 06:07:30+00:00"
+  },
+  {
+    "id": "u34613288",
+    "username": "Arsenal",
+    "name": "Arsenal",
+    "description": "The official account of Arsenal Football Club.",
+    "location": "London",
+    "verified": true,
+    "protected": false,
+    "created_at": "2009-04-23 13:38:19+00:00"
+  },
+  {
+    "id": "u14573900",
+    "username": "ManCity",
+    "name": "Manchester City",
+    "description": "𝐸𝓈𝓉. 1894 💙 This Is Our City 🏆 7 x League Champions 🙌 #ManCity ℹ️ @ManCityHelp",
+    "location": "Etihad Stadium",
+    "verified": true,
+    "protected": false,
+    "created_at": "2008-04-28 19:28:08+00:00"
+  },
+  {
+    "id": "u1262440948333793280",
+    "username": "Andresgirald345",
+    "name": "Andres giraldo paez 🆕🆒",
+    "description": "Youtuber 📲 🎮\nEstudiante📖\nFutbol⚽\nCristiano 😇 # autor de cristo \n #Encuestador #seguiracristo\n#pingpong #futbol  #encuarentena #comer😁😁",
+    "location": "Colombia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2020-05-18 17:52:45+00:00"
+  },
+  {
+    "id": "u1374402131281678344",
+    "username": "wugd14",
+    "name": "Linlly💯💯💯",
+    "description": "Follow back 100% in 30 min💯💯\n💯💯💯💯💯💯 🇨🇳🇨🇳\n🌈Featuring amazing moment\n🌹Tag me to be featured",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2021-03-23 16:46:29+00:00"
+  },
+  {
+    "id": "u161650812",
+    "username": "morsesamuel1",
+    "name": "Austen",
+    "description": "I love sport, writing, blogging and languages!",
+    "location": "Sydney, Australia",
+    "verified": false,
+    "protected": false,
+    "created_at": "2010-07-01 11:43:38+00:00"
+  },
+  {
+    "id": "u2906232045",
+    "username": "LorenaMHurtado",
+    "name": "Lorena Hurtado",
+    "description": "Presidenta @FundacionRevida, trabajamos por la #SaludPública esterilizando a🐈 🐕 callejizados y educando a la población !DMs solo por temas de la fundación! 💍",
+    "location": null,
+    "verified": false,
+    "protected": false,
+    "created_at": "2014-12-05 11:42:54+00:00"
+  }
+]
