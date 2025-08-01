@@ -3,13 +3,17 @@ import networkx as nx
 import csv
 import matplotlib.pyplot as plt
 
-def build_graph(path="../data/following.csv"):
+def build_graph(is_directed, path="../data/following.csv"):
     try:
         with open(path, newline='', encoding='utf-8') as f:
             reader = csv.reader(f)
             # skip first line (source_id,relation,target_id)
             next(reader)
-            G = nx.MultiDiGraph()
+
+            if is_directed:
+                G = nx.MultiDiGraph()
+            else:
+                G = nx.MultiGraph()
 
             for src, rel, tgt in reader:
                 add_edge(G, src, tgt, rel)
