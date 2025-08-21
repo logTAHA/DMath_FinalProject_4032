@@ -7,7 +7,6 @@ def build_graph(is_directed, path="../data/following.csv"):
     try:
         with open(path, newline='', encoding='utf-8') as f:
             reader = csv.reader(f)
-            # skip first line (source_id,relation,target_id)
             next(reader)
 
             if is_directed:
@@ -187,3 +186,16 @@ def analyze_centrality(
 
     return results
 
+def print_menu():
+    print("\n" + "=" * 40)
+    print("           Graph Analyzer Menu")
+    print("=" * 40)
+    print("1. Calculate Node Degrees")
+    print("2. Find Connected Components")
+    print("3. Run BFS Traversal")
+    print("4. Run DFS Traversal")
+    print("5. Find Shortest Path Between Two Nodes")
+    print("6. Analyze Centrality (Find Key Nodes)")
+    print("7. Draw Graph")
+    print("8. Exit")
+    print("=" * 40)
