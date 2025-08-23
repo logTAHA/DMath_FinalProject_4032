@@ -25,7 +25,7 @@ def build_graph(is_directed, path="../data/following.csv"):
     # return graph
     return G
 
-default_attrs = {"type": "user", "color": "black", "size": "80"}
+default_attrs = {"type": "user", "color": "black", "size": "8"}
 def add_edge(G, src, tgt, rel):
     if src not in G:
         G.add_node(src, **default_attrs)

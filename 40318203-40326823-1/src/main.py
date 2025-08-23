@@ -1,6 +1,9 @@
 from graph_util import *
 
 def graph_analyze(G):
+
+    # TODO: adding future -> show the path in pyvis after running something like shortest_path or bfs dfs and ...
+
     while True:
         print_menu()
         choice = input("Please select an option (1-8): ")
