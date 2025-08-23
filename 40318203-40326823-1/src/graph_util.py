@@ -1,7 +1,8 @@
 from typing import *
+from collections import deque
+from networkx.drawing.nx_agraph import to_agraph
 import networkx as nx
 import csv
-import matplotlib.pyplot as plt
 
 def build_graph(is_directed, path="../data/following.csv"):
     try:
@@ -70,55 +71,88 @@ def find_connected_components(
 
     return components
 
+
+def ask_direction():
+    while True:
+        direction = input("Enter direction (in / out / both or press Enter for all out): ").strip().lower()
+        if direction in ("in", "out", "both"):
+            return direction
+        print("Invalid input. Please enter 'in', 'out', or 'both'.")
+
+
+def ask_start_node(G):
+    while True:
+        start_node = input(f"Enter the start node: ")
+        if start_node in G:
+            return start_node
+        print(f"Node {start_node} does not exist in the graph.")
+
 def dfs(G, start_node, direction='out'):
-    if direction != 'in' and direction != 'out' and direction != 'both':
-        raise ValueError(f"Direction '{direction}' is not supported. Choose from 'in', 'out', or 'both'")
+    valid_directions = {'in', 'out', 'both'}
+    if direction not in valid_directions:
+        raise ValueError(
+            f"Direction '{direction}' is not supported. "
+            f"Choose from {valid_directions}"
+        )
+
     stack = [start_node]
     visited = set()
     path = []
+
+    def get_neighbors(node):
+        if direction == 'out':
+            return list(G.successors(node))
+        elif direction == 'in':
+            return list(G.predecessors(node))
+        else:
+            out_neighbors = set(G.successors(node))
+            in_neighbors = set(G.predecessors(node))
+            return sorted(out_neighbors | in_neighbors)
+
     while stack:
         node = stack.pop()
         if node in visited:
             continue
         visited.add(node)
         path.append(node)
-        # graph is multy directed graph
-        neighbors = list()
-        if direction == 'out':
-            neighbors = list(G.successors(node))
-        elif direction == 'in':
-            neighbors = list(G.predecessors(node))
-        elif direction == 'both':
-            out_neighbors = set(G.successors(node))
-            in_neighbors = set(G.predecessors(node))
-            neighbors = list(out_neighbors | in_neighbors)
 
+        neighbors = get_neighbors(node)
         stack.extend(reversed(neighbors))
+
     return path
 
 def bfs(G, start_node, direction='out'):
-    if direction != 'in' and direction != 'out' and direction != 'both':
-        raise ValueError(f"Direction '{direction}' is not supported. Choose from 'in', 'out', or 'both'")
-    queue = [start_node]
+    valid_directions = {'in', 'out', 'both'}
+    if direction not in valid_directions:
+        raise ValueError(
+            f"Direction '{direction}' is not supported. "
+            f"Choose from {valid_directions}"
+        )
+
+    queue = deque([start_node])
     visited = set()
     path = []
 
+    def get_neighbors(node):
+        if direction == 'out':
+            return list(G.successors(node))
+        elif direction == 'in':
+            return list(G.predecessors(node))
+        else:  # 'both'
+            out_neighbors = set(G.successors(node))
+            in_neighbors = set(G.predecessors(node))
+            return sorted(out_neighbors | in_neighbors)
+
     while queue:
-        node = queue.pop()
+        node = queue.popleft()
         if node in visited:
             continue
         visited.add(node)
         path.append(node)
-        neighbors = list()
-        if direction == 'out':
-            neighbors = list(G.successors(node))
-        elif direction == 'in':
-            neighbors = list(G.predecessors(node))
-        elif direction == 'both':
-            out_neighbors = set(G.successors(node))
-            in_neighbors = set(G.predecessors(node))
-            neighbors = list(out_neighbors | in_neighbors)
-        queue = neighbors + queue
+
+        neighbors = get_neighbors(node)
+        queue.extend(neighbors)
+
     return path
 
 def find_shortest_path(
@@ -185,6 +219,26 @@ def analyze_centrality(
         results["eigenvector_centrality"] = {}
 
     return results
+
+def draw_graph(
+        G: nx.Graph,
+        filename: str = "graph.png",
+        prog: str = "dot",
+        node_color: str = "lightblue",
+        node_shape: str = "circle",
+        show_weights: bool = True
+) -> None:
+    A = to_agraph(G)
+    A.node_attr.update(shape=node_shape, style="filled", color=node_color)
+
+    if show_weights:
+        for u, v, data in G.edges(data=True):
+            label = data.get("weight") or data.get("cost")
+            if label is not None:
+                e = A.get_edge(u, v)
+                e.attr["label"] = str(label)
+
+    A.draw(filename, format=filename.split(".")[-1], prog=prog)
 
 def print_menu():
     print("\n" + "=" * 40)
