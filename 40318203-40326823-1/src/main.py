@@ -1,9 +1,7 @@
 from graph_util import *
 
 def graph_analyze(G):
-
-    # TODO: adding future -> show the path in pyvis after running something like shortest_path or bfs dfs and ...
-
+    global file_path
     while True:
         print_menu()
         choice = input("Please select an option (1-8): ")
@@ -14,15 +12,12 @@ def graph_analyze(G):
         elif choice == '1':
             while True:
                 node = input("Enter node ID (or press Enter for all nodes): ").strip() or None
-                try:
-                    degrees = degree_calculator(G, node) if node else degree_calculator(G)
-                    print("\nDegree(s):")
-                    for n, deg in degrees.items():
-                        print(f"  - {n}: {deg}")
-                    break
-                except Exception as e:
-                    print(e)
-                    print("Please try again.\n")
+
+                degrees = degree_calculator(G, node) if node else degree_calculator(G)
+                print("\nDegree(s):")
+                for n, deg in degrees.items():
+                    print(f"  - {n}: {deg}")
+                break
 
         elif choice == '2':
             for component in find_connected_components(G):
@@ -63,9 +58,11 @@ def graph_analyze(G):
 
                     if result is None:
                         print(f"No path found from {source} to {target}")
+                        break
                     else:
                         path, length = result
                         print(f"Shortest path: {path}, length: {length}")
+                        break
                 except ValueError as e:
                     print(e)
                     print("Please try again.\n")
@@ -85,16 +82,16 @@ def graph_analyze(G):
                     print(e)
                     print("Please try again.\n")
 
-        # elif choice == '7':
-        #     filename = input("Enter output filename (e.g. graph.png): ").strip() or "graph.png"
-        #     prog = input("Enter layout program [dot/neato/fdp/sfdp/circo/twopi] (default=dot): ").strip() or "dot"
-        #     node_color = input("Enter node color (default=lightblue): ").strip() or "lightblue"
-        #     node_shape = input("Enter node shape (default=circle): ").strip() or "circle"
-        #     show_weights_input = input("Show weights? [y/n] (default=y): ").strip().lower()
-        #     show_weights = (show_weights_input != "n")
-        #
-        #     file_path = draw_graph(G, filename=filename, prog=prog, node_color=node_color,node_shape=node_shape, show_weights=show_weights)
-        #     print(f"Graph visualization saved to {file_path}")
+        elif choice == '7':
+            filename = input("Enter output filename (e.g. graph.png): ").strip() or "graph.png"
+            prog = input("Enter layout program [dot/neato/fdp/sfdp/circo/twopi] (default=dot): ").strip() or "dot"
+            node_color = input("Enter node color (default=lightblue): ").strip() or "lightblue"
+            node_shape = input("Enter node shape (default=circle): ").strip() or "circle"
+            show_weights_input = input("Show weights? [y/n] (default=y): ").strip().lower()
+            show_weights = (show_weights_input != "n")
+
+            draw_graph(G, filename=filename, prog=prog, node_color=node_color, node_shape=node_shape, show_weights=show_weights)
+            print(f"Graph visualization saved")
 
         elif choice == '8':
             file_path = show_graph(G, "remote")

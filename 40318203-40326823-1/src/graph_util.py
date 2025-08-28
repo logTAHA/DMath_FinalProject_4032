@@ -1,4 +1,5 @@
 import os
+import random
 from typing import *
 from collections import deque
 from networkx.drawing.nx_agraph import to_agraph
@@ -6,6 +7,8 @@ import networkx as nx
 import csv
 from pyvis.network import Network
 
+default_attrs = {"type": "user", "color": "black", "size": "8"}
+random_colors = ["red", "green", "blue", "magenta", "gray", "pink"]
 
 def build_graph(is_directed, path="../data/following.csv"):
     try:
@@ -25,7 +28,6 @@ def build_graph(is_directed, path="../data/following.csv"):
     # return graph
     return G
 
-default_attrs = {"type": "user", "color": "black", "size": "8"}
 def add_edge(G, src, tgt, rel):
     if src not in G:
         G.add_node(src, **default_attrs)
@@ -55,9 +57,19 @@ def degree_calculator(
     if nx.is_directed(G):
         for n in nodes:
             results[n] = {"in_degree": G.in_degree(n),"out_degree": G.out_degree(n)}
+            G.nodes[n]["color"] = "red"
+            G.nodes[n]["size"] = "10"
     else:
         for n in nodes:
             results[n] = G.degree(n)
+            G.nodes[n]["color"] = "red"
+            G.nodes[n]["size"] = "10"
+
+    print("\nbuilding graph")
+    path = show_graph(G, "remote")
+    print(f"graph built at {path}, check the file\n")
+
+    reset_graph_attrs(G)
 
     return results
 
@@ -71,6 +83,19 @@ def find_connected_components(
         components = list(nx.strongly_connected_components(G))
     else:
         components = list(nx.connected_components(G))
+
+    # change color
+    for comp in components:
+        color = random.choice(random_colors)
+        for node in comp:
+            G.nodes[node]["color"] = color
+
+    print("\nbuilding graph")
+    path = show_graph(G, "remote")
+    print(f"graph built at {path}, check the file\n")
+
+    reset_graph_attrs(G)
+
 
     return components
 
@@ -172,6 +197,37 @@ def find_shortest_path(
     try:
         path = nx.dijkstra_path(G, source, target, weight=weight)
         distance = nx.dijkstra_path_length(G, source, target, weight=weight)
+
+
+        for n in path:
+            G.nodes[n]["color"] = "green"
+            G.nodes[n]["size"] = "13"
+
+        G.nodes[source]["color"] = "blue"
+        G.nodes[source]["size"] = "15"
+        G.nodes[target]["color"] = "red"
+        G.nodes[target]["size"] = "15"
+
+        if G.is_multigraph():
+            for u, v, key in G.edges(keys=True):
+                G.edges[u, v, key]["color"] = "black"
+        else:
+            for u, v in G.edges():
+                G.edges[u, v]["color"] = "black"
+
+        for i in range(len(path) - 1):
+            u = path[i]
+            v = path[i + 1]
+            G.edges[u, v, 0]["color"] = "magenta"
+
+
+        print("\nbuilding graph (src is blue, trg is red and path is green)")
+        file_path = show_graph(G, "remote")
+        print(f"graph built at {file_path}, check the file\n")
+
+        reset_graph_attrs(G)
+
+
         return path, distance
     except nx.NodeNotFound:
         raise ValueError(f"Source node '{source}' or target node '{target}' not found in the graph.")
@@ -249,7 +305,7 @@ def draw_graph(
     A.draw(file_path, format=filename.split(".")[-1], prog=prog)
     return file_path
 
-def show_graph(G: Union[nx.Graph, nx.DiGraph, nx.MultiGraph, nx.MultiDiGraph], resources: Literal["remote", "local"] = "local"):
+def show_graph(G: Union[nx.Graph, nx.DiGraph, nx.MultiGraph, nx.MultiDiGraph], resources = "local"):
     net = Network(height="1000px", width="100%", notebook=True, cdn_resources=resources)
     net.from_nx(G)
     net.barnes_hut()
@@ -302,6 +358,19 @@ def show_graph(G: Union[nx.Graph, nx.DiGraph, nx.MultiGraph, nx.MultiDiGraph], r
     net.show(file_path)
     return file_path
 
+def reset_graph_attrs(G: nx.Graph) -> None:
+    for n in G.nodes:
+        G.nodes[n].update(default_attrs)
+
+    if G.is_multigraph():
+        for u, v, key in G.edges(keys=True):
+            G.edges[u, v, key]["color"] = "black"
+    else:
+        for u, v in G.edges():
+            G.edges[u, v]["color"] = "black"
+
+
+
 def print_menu():
     print("\n" + "=" * 40)
     print("           Graph Analyzer Menu")
@@ -312,7 +381,7 @@ def print_menu():
     print("4. Run DFS Traversal")
     print("5. Find Shortest Path Between Two Nodes")
     print("6. Analyze Centrality (Find Key Nodes)")
-    # print("7. Draw Graph")
+    print("7. Draw Graph")
     print("8. Show Graph HTML")
     print("0. Exit")
     print("=" * 40)
