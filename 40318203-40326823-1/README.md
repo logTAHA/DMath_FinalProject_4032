@@ -14,7 +14,7 @@ This project is a **Graph Analyzer for social networks** that builds a graph fro
 - Compute **Shortest Path** between nodes using **Dijkstra**
 - Perform **Centrality Analysis** (Degree, In-Degree, Out-Degree, Betweenness, Closeness, Eigenvector) to identify key nodes
 - Graph visualization with **Graphviz (PNG)** and **PyVis (HTML)**
-- [Test results](40318203-40326823-1/TESTS.md)  
+- [Test results](https://github.com/logTAHA/DMath_FinalProject_4032/blob/main/40318203-40326823-1/TESTS.md)  
 
 ---
 
@@ -112,7 +112,7 @@ Once the graph is loaded, the following menu is displayed:
 
 | Name | Role | Responsibilities |
 |------|------|------------------|
-| Mohammad Taha Amini | Team Leader | Extracting Data Set, Graph Building, BFS, DFS and Graph Drawing |
+| Taha Amini | Team Leader | Extracting Data Set, Graph Building, BFS, DFS, Graph Drawing and Test |
 | Eiliya Yavari | Collaborator | Degree Calculating, Finding Shortest Path, Connected Components, Centrality Analysis, CLI and Documentation|
 
 ---
