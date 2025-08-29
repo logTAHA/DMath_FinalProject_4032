@@ -1,100 +1,99 @@
-# 🐦 TwiBot‑22 نمونه گیری از دیتاست
+# 🐦 TwiBot-22 Dataset Sampling
 
-‏این پروژه مربوط به انتخاب یک زیرمجموعه کوچک و معنادار از دیتاست **TwiBot‑22** است.
-
----
-
-## 📌 معرفی دیتاست اصلی  
-
-‏دیتاست **TwiBot‑22** توسط یک تیم تحقیقاتی بین‌المللی به سرپرستی **Shangbin Feng** تهیه شده و شامل سه بخش اصلی است:  
-
-- **اطلاعات کاربران (users)**  
-- **توییت‌ها (tweets)**  
-- **روابط بین کاربران** مثل فالو، لایک و …  
-
-[لینک گیت‌هاب پروژه TwiBot‑22](https://github.com/LuoUndergradXJTU/TwiBot-22)  
-[لینک گوگل درایو دیتاست](https://drive.google.com/drive/folders/1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs?usp=sharing)  
+This project focuses on selecting a **smaller but meaningful subset** of the **TwiBot-22** dataset.
 
 ---
 
-## 🎯 هدف پروژه  
+## 📌 Original Dataset Overview
 
-‏از آنجا که دیتاست اصلی بسیار بزرگ است، نیاز داشتیم یک **نمونه کوچک‌تر ولی معنادارتر** از آن انتخاب کنیم تا برای تحلیل گراف و آزمایش‌ها مناسب باشد.  
+The **TwiBot-22** dataset was created by an international research team led by **Shangbin Feng** and consists of three main parts:
+
+- **User information (users)**  
+- **Tweets (tweets)**  
+- **User relations** such as follow, like, etc.  
+
+[GitHub link to TwiBot-22 project](https://github.com/LuoUndergradXJTU/TwiBot-22)  
+[Google Drive link to dataset](https://drive.google.com/drive/folders/1YwiOUwtl8pCd2GD97Q_WEzwEUtSPoxFs?usp=sharing)  
 
 ---
 
-## 🛠 روند آماده‌سازی دیتاست  
+## 🎯 Project Goal
 
-### ۱. انتخاب کاربران اولیه  
+Since the original dataset is very large, we needed to extract a **smaller but still meaningful sample** suitable for graph analysis and experiments.  
 
-- از فایل `following.csv` (روابط فالو) استفاده شد.  
-- مجموعه‌ای از کاربران انتخاب و در فایل `selected-users.txt` ذخیره شدند.  
+---
 
-### ۲. استخراج روابط فیلترشده  
+## 🛠 Dataset Preparation Process
 
-- از بین تمام روابط موجود، فقط آن‌هایی نگه داشته شدند که **هر دو سر رابطه (source و target)** در `selected-users.txt` حضور داشتند.  
+### 1. Selecting initial users
 
-### ۳. استخراج اطلاعات کاربران منتخب  
+- We started from the `following.csv` file (follow relations).  
+- A subset of users was chosen and stored in `selected-users.txt`.  
 
-- اطلاعات کاربران انتخاب‌شده از فایل اصلی `user.json` خوانده شد.  
-- فقط ستون‌های مهم مانند:  
+### 2. Filtering relations
+
+- From all existing relations, we kept only those where **both source and target users** were included in `selected-users.txt`.  
+
+### 3. Extracting user details
+
+- User details for the selected accounts were extracted from the original `user.json`.  
+- Only key fields were kept:  
   `id`, `username`, `name`, `description`, `location`, `verified`, `protected`, `created_at`  
-  نگه‌داری و در فایل `selected-users-detail.json` ذخیره شدند.  
+- These were stored in `selected-users-detail.json`.  
 
 ---
 
-## ⚡ چالش در انتخاب کاربران  
+## ⚡ Challenge in selecting users
 
-‏اگر ۱۰۰ کاربر به صورت تصادفی انتخاب می‌کردیم، احتمال اینکه بین آن‌ها روابط معناداری وجود داشته باشد کم بود و نمونه نهایی گسسته و بی‌ارتباط می‌شد.  
+If we picked 100 users completely at random, the likelihood of having meaningful connections between them was low, resulting in a fragmented, unconnected sample.  
 
-### روش اول (و مشکل آن)  
+### First approach (and its issue)
 
-- ابتدا یک نود با درجه بالا به صورت تصادفی انتخاب می‌شد.  
-- سپس با الگوریتم **DFS یا BFS** تا رسیدن به ۱۰۰ نود ادامه می‌دادیم.  
-- **مشکل:** این روش تنوع گراف را کاهش می‌داد و کاربران به شکل زنجیره‌ای به هم متصل می‌شدند.  
-
----
-
-## ✅ راه‌حل نهایی برای انتخاب کاربران  
-
-### مرحله ۱: ساخت گراف بدون جهت  
-
-- فایل `following.csv` به یک گراف **بدون جهت** تبدیل میشود.  
-- اگر`a → b` آنگاه `b` به همسایه‌های `a` و `a` به همسایه‌های `b` اضافه میشود.
-- این گراف در متغیر `relations` ذخیره میشود.  
-
-### مرحله ۲: انتخاب اولیه سه نود  
-
-1. یک نود تصادفی انتخاب شد → **node1**  
-2. از همسایه‌های `node1` یک نود دیگر انتخاب شد → **node2**  
-3. از همسایه‌های `node2` (به جز `node1`) یک نود سوم انتخاب شد → **node3**  
-
-این سه نود در مجموعه `selected` ذخیره شدند.  
-
-### مرحله ۳: گسترش مجموعه `selected`  
-
-تا زمانی که اندازه `selected` کمتر از ۵۰ بود:  
-- مجموعه‌ای خالی به نام `candidate` ساخته شد.  
-- برای هر عضو `selected`، همسایه‌هایش به `candidate` اضافه شدند.  
-- اعضایی که قبلاً در `selected` بودند از `candidate` حذف شدند تا دوباره انتخاب نشوند.  
-
-اگر `candidate` خالی نبود:  
-- با تابع `best_node` بهترین نود انتخاب شد.  
-  - این نود کسی بود که **بیشترین اشتراک روابط با کاربران انتخاب‌شده** را داشت.  
-
-اگر `candidate` خالی بود:  
-- از بین مجموعه `remaining = all_nodes - selected` بهترین نود انتخاب شد.  
-
-### مرحله ۴: دو بار اجرای فرآیند برای تنوع گراف  
-
-- این فرآیند دوبار اجرا شد تا دو زیرگراف نسبتاً مستقل انتخاب شوند.  
-- در هر بار ۵۰ کاربر انتخاب شدند.  
-- در نهایت برای نظم بهتر گراف و جلوگیری از شلوغی بیش از حد، ۴ کاربر با تعداد روابط بالا و بی اثر در کلیت گراف حذف شدند.  
+- Start with one high-degree node chosen randomly.  
+- Expand using **DFS or BFS** until 100 nodes were reached.  
+- **Problem:** This reduced graph diversity, creating long chain-like structures instead of richer connections.  
 
 ---
 
-## 📊 نتیجه نهایی  
+## ✅ Final approach for user selection
 
-- در نهایت **۹۶ کاربر** در فایل `data/users.txt` ذخیره شدند.  
-- مجموعاً **۴۱۴ رابطه فالو** بین این کاربران در فایل `data/following.csv` ثبت شد.  
-- اطلاعات تکمیلی این کاربران (نام، نام کاربری، توضیحات، مکان، و …) در فایل `data/users-detail.json` ذخیره شد.  
+### Step 1: Build an undirected graph
+
+- The `following.csv` file was converted into an **undirected graph**.  
+- If `a → b`, then `b` is added to neighbors of `a` and `a` to neighbors of `b`.  
+- This graph was stored in the variable `relations`.  
+
+### Step 2: Pick three initial nodes
+
+1. Randomly select a node → **node1**  
+2. Select one neighbor of `node1` → **node2**  
+3. Select one neighbor of `node2` (excluding `node1`) → **node3**  
+
+These three nodes were added to the set `selected`.  
+
+### Step 3: Expanding the `selected` set
+
+While the size of `selected` was less than 50:  
+- Create an empty set called `candidate`.  
+- For each node in `selected`, add its neighbors to `candidate`.  
+- Remove nodes already in `selected` to avoid duplication.  
+
+If `candidate` was not empty:  
+- Use the `best_node` function to pick the node with the **highest overlap of connections with already selected nodes**.  
+
+If `candidate` was empty:  
+- From `remaining = all_nodes - selected`, pick the best node.  
+
+### Step 4: Run the process twice for diversity
+
+- The whole process was repeated twice to select two relatively independent subgraphs.  
+- Each run produced 50 users.  
+- Finally, 4 high-degree users (with excessive connections but little analytical value) were removed to keep the graph balanced.  
+
+---
+
+## 📊 Final Result
+
+- **96 users** were stored in `data/users.txt`.  
+- A total of **414 follow relations** between them were saved in `data/following.csv`.  
+- Detailed user information (name, username, description, location, etc.) was stored in `data/users-detail.json`.  
