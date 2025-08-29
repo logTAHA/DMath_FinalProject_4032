@@ -102,7 +102,7 @@ def find_connected_components(
 
 def ask_direction():
     while True:
-        direction = input("Enter direction (in / out / both or press Enter for all out): ").strip().lower()
+        direction = input("Enter direction (in / out / both or both if not directed): ").strip().lower()
         if direction in ("in", "out", "both"):
             return direction
         print("Invalid input. Please enter 'in', 'out', or 'both'.")
@@ -127,6 +127,9 @@ def dfs(G, start_node, direction='out'):
     path = []
 
     def get_neighbors(node):
+        if not G.is_directed():
+            return list(G.neighbors(node))
+
         if direction == 'out':
             return list(G.successors(node))
         elif direction == 'in':
@@ -161,6 +164,9 @@ def bfs(G, start_node, direction='out'):
     path = []
 
     def get_neighbors(node):
+        if not G.is_directed():
+            return list(G.neighbors(node))
+
         if direction == 'out':
             return list(G.successors(node))
         elif direction == 'in':

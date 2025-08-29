@@ -30,6 +30,7 @@ def graph_analyze(G):
                 try:
                     path = bfs(G, start_node, direction) if direction else bfs(G, start_node)
                     print(path)
+                    break
                 except ValueError as e:
                     print(e)
                     print("Please try again.\n")
@@ -41,6 +42,7 @@ def graph_analyze(G):
                 try:
                     path = dfs(G, start_node, direction) if direction else dfs(G, start_node)
                     print(path)
+                    break
                 except ValueError as e:
                     print(e)
                     print("Please try again.\n")
