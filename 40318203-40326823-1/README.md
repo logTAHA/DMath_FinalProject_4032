@@ -14,6 +14,7 @@ This project is a **Graph Analyzer for social networks** that builds a graph fro
 - Compute **Shortest Path** between nodes using **Dijkstra**
 - Perform **Centrality Analysis** (Degree, In-Degree, Out-Degree, Betweenness, Closeness, Eigenvector) to identify key nodes
 - Graph visualization with **Graphviz (PNG)** and **PyVis (HTML)**
+- [Test results](40318203-40326823-1/TESTS.md)  
 
 ---
 
